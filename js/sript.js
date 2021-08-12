@@ -23,13 +23,16 @@ if (window.innerWidth < 768) { // Если медиа запрос совпад�
 	headerMenu.appendChild(copyIcons);
 }
 
-window.addEventListener('resize', () =>{
-	if (window.innerWidth < 768) { // Если медиа запрос совпадает
+const mediaQuery = window.matchMedia('(max-width: 768px)')
+function handleTabletChange(e) {
+	if (e.matches) {
 		headerMenu.appendChild(copyIcons);
 	} else {
 		headerMenu.removeChild(copyIcons);
 	}
-})
+}
+mediaQuery.addEventListener("change", handleTabletChange);
+handleTabletChange(mediaQuery);
 
 const headClose = document.querySelector('.header__close');
 const menuIcon = document.querySelector('.menu__icon');
