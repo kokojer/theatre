@@ -49,7 +49,7 @@ aboutImg.addEventListener('click',() =>{
 	body.classList.add('hidd');
 });
 img1.addEventListener('click',(e) =>{
-	if(e.toElement.className != "imgg"){
+	if(!e.target.closest(".imgg")){
 	img1.classList.toggle('active');
 	body.classList.remove('hidd');
 	}
