@@ -791,6 +791,8 @@ html, body {
   .offer__info {
     padding-bottom: 100px;
     padding-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .offer {
     padding-right: 40px;
