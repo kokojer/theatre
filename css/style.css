@@ -401,6 +401,8 @@ html, body {
 
 .offer__slider {
   min-width: 0;
+  padding-top:50px;
+  padding-bottom:50px;
 }
 
 @media (max-width: 992px) {
@@ -568,6 +570,12 @@ html, body {
   }
 }
 
+@media (max-height: 688px) {
+  .contact {
+    min-height: 688px;
+  }
+}
+
 @media (max-width: 1100px) {
   .contact {
     width: 120px;
@@ -695,7 +703,7 @@ html, body {
     top: 0;
     left: -100%;
     width: 300px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #333333;
     -webkit-transition: left .3s ease 0s;
     transition: left .3s ease 0s;
@@ -781,8 +789,8 @@ html, body {
             transform: rotate(45deg);
   }
   .offer__info {
-    margin-left: 0px;
-    margin-right: 0px;
+    padding-bottom: 100px;
+    padding-top: 100px;
   }
   .offer {
     padding-right: 40px;
