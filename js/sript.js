@@ -27,7 +27,7 @@ const mediaQuery = window.matchMedia('(max-width: 768px)')
 function handleTabletChange(e) {
 	if (e.matches) {
 		headerMenu.appendChild(copyIcons);
-	} else if(copyIcons.closest(headerMenu)){
+	} else if(copyIcons.closest(".header__menu")){
 		headerMenu.removeChild(copyIcons);
 	}
 }
