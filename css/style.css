@@ -417,6 +417,7 @@ html, body {
 .offer__slider .swiper-container {
   width: 380px;
   min-width: 0;
+	overflow:hidden;
 }
 
 @media (max-width: 1234px) {
